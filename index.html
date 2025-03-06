@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | News homepage</title>
+
+ 
+</head>
+<body>
+  <!-- <div class="sidebar-mobile-menu">
+    <div class="close-icon-container"><img src="./assets/images/icon-menu-close.svg" alt="mobile-menu-close-icon" class="mobile-menu-close" width="25" height="25"></div>
+    <ul>
+      <li>Home</li>
+      <li>New</li>
+      <li>Popular</li>
+      <li>Trending</li>
+      <li>Categories</li>
+    </ul>
+  </div> -->
+  <main>
+    
+    <header>
+      <nav>
+        <img src="./assets/images/logo.svg" alt="main-logo" width="75" height="50">
+        <img src="./assets/images/icon-menu.svg" alt="mobile-menu" width="50" height="50" class="mobile-menu-image">
+        <ul>
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </nav>
+    </header>
+    <article class="second-row-content">
+      <article class="main-content">
+        <picture>
+          <source media="(max-width:480px)" srcset="./assets/images/image-web-3-mobile.jpg">
+          <source media="(max-width:650px)" srcset="./assets/images/image-web-3-desktop.jpg">
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="web3-image-desktop" class="web3-image" ></picture>
+        <div class="main-content-text-section">
+          <div class="main-text" aria-labelledby="main-heading"><strong>The Bright Future of Web 3.0?</strong></div>
+          <div class="read-more-section">
+            <p class="web3-info" aria-labelledby="short-information-about-web3">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+              But is it really fulfilling its promise?
+            </p>
+            <button class="read-more-button" aria-labelledby="read-more-about-web3">READ MORE</button>
+          </div>
+        </div>
+      </article>
+      <aside class="aside-new-section">
+        <div class="aside-heading"><b>New</b></div>
+        <section class="aside-sub-section">
+          <strong class="sub-heading">Hydrogen VS Electric Cars</strong>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </section>
+        <hr class="aside-horizontal-line">
+        <section class="aside-sub-section">
+          <strong  class="sub-heading">The Downsides of AI Artistry</strong>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </section>
+        <hr class="aside-horizontal-line">
+        <section class="aside-sub-section">
+          <strong  class="sub-heading">Is VC Funding Drying Up?</strong>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </section>
+      </aside>
+    </article>
+    <article class="last-section">
+      <section class="retro-pc-section">
+        <img src="./assets/images/image-retro-pcs.jpg" alt="image-retro-pcs" class="last-section-image">
+        <div class="text-section">
+          <h2>01</h2>
+          <div class="text-section-sub-heading">Reviving Retro PCs</div>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </section>
+      <section class="top-laptops-section">
+        <img src="./assets/images/image-top-laptops.jpg" alt="image-top-laptops"  class="last-section-image">
+        <div class="text-section">
+          <h2>02</h2>
+          <div class="text-section-sub-heading">Top 10 Laptops of 2022</div>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </section>
+      <section class="growth-gaming-section">
+        <img src="./assets/images/image-gaming-growth.jpg" alt="image-gaming-growth" class="last-section-image">
+        <div class="text-section">
+          <h2>03</h2>
+          <div class="text-section-sub-heading">The Growth of Gaming</div>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </section>
+    </article>
+    
+  </main>
+<script src="./script.js"></script>
+</body>
+</html>

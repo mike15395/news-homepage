@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --soft-orange:hsl(35, 77%, 62%);
+    --soft-red:hsl(5, 85%, 63%);
+    --off-white:hsl(36, 100%, 99%);
+    --grayish-blue:hsl(233, 8%, 79%);
+    --dark-grayish-blue:hsl(236, 13%, 42%);
+    --very-dark-blue:hsl(240, 100%, 5%);
+
+}
+
+body{
+   
+    font-family: "Inter";
+}
+
+main{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    grid-template-columns: repeat(1,auto);
+    grid-template-areas: "first-row"
+    "second-row"
+    "third-row";
+    gap: 40px;
+    padding: 3%;
+}
+header{
+    grid-area: first-row;
+    /* height: 100px; */
+    
+}
+
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+header nav ul li{
+    color: gray
+}
+
+header nav .mobile-menu-image{
+    display: none;
+}
+
+ .sidebar-mobile-menu{
+    display: none;
+    background-color: var(--off-white);
+    
+} 
+
+
+
+
+li:hover{
+    color: var(--soft-orange);
+    cursor: pointer;
+}
+
+
+
+.second-row-content{
+    grid-area: second-row;
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "main-content-area main-content-area aside-content-area";
+    gap: 20px;
+}
+
+.second-row-content .main-content{
+    grid-area: main-content-area;
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    grid-template-columns: repeat(1,auto);
+    grid-template-areas: "image-area"
+    "text-area";
+    gap: 20px;   
+}
+
+.second-row-content .main-content .web3-image{
+    grid-area: image-area;
+    width: 100%;
+    height: 100%;
+}
+
+.second-row-content .main-content .main-content-text-section{
+    grid-area: text-area;
+    display: flex;
+    gap: 50px;
+}
+
+.main-content .main-text{
+    font-size: 56px;
+    color: var(--very-dark-blue);
+}
+
+.main-content .read-more-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main-content .read-more-section .web3-info{
+    color: gray;
+    text-align: left;
+    font-size: 15px;
+}
+
+.main-content .read-more-section .read-more-button{
+background-color: var(--soft-red);
+color: var(--very-dark-blue);
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 20px;
+padding-right: 20px;
+letter-spacing: 5px;
+border: none;
+font-weight: 700;
+cursor: pointer;
+}
+
+.aside-new-section{
+    grid-area: aside-content-area;
+    display: flex;
+    flex-direction: column;
+    padding: 7%;
+   justify-content: space-between;
+    background-color: var(--very-dark-blue);
+    width: 100%;
+    height: 100%;
+}
+
+.aside-new-section .aside-heading{
+    font-size: 36px;
+    color: var(--soft-orange);
+
+}
+
+.aside-new-section .sub-heading{
+    font-size: 24px;
+}
+.aside-new-section  p{
+    font-size: 15px;
+    color: var(--grayish-blue);
+}
+.aside-new-section .aside-sub-section{
+    color: var(--off-white);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.last-section{
+    grid-area: third-row;
+    display: grid;
+    grid-template-rows: repeat(1,auto);
+    grid-template-columns: repeat(3,auto);
+    grid-template-areas: "retro-pc top-laptops growth-gaming";
+}
+
+.last-section .retro-pc-section{
+    grid-area: retro-pc;
+    display: flex;
+    gap: 15px;
+
+}
+
+.last-section .top-laptops-section{
+    grid-area: top-laptops;
+    display: flex;
+    gap: 15px;
+
+}
+
+.last-section .growth-gaming-section{
+    grid-area: growth-gaming;
+    display: flex;
+    gap: 15px;
+}
+
+.last-section .text-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.last-section .text-section h2{
+    color: var(--soft-red);
+
+}
+
+
+.last-section .text-section-sub-heading{
+    font-weight: 800;
+    color: var(--very-dark-blue);
+    font-size: 18px;
+}
+.last-section .last-section-image{
+    width: 100px;
+    height: 100px;
+}
+.last-section p{
+    color: gray;
+}
+
+@media all and (max-width:480px){
+    header nav .mobile-menu-image{
+        display: flex;
+    }
+   
+    header nav ul{
+        display: none;
+    }
+
+    /* .sidebar-mobile-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        height: 100vh;
+        width: 430px;
+        padding: 10%;
+        left: 100vw;
+        position: absolute;
+       
+
+    }
+
+    .sidebar-mobile-menu .close-icon-container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .sidebar-mobile-menu .mobile-menu-close{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .sidebar-mobile-menu ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    } */
+
+    .second-row-content{
+        display: grid;
+        grid-template-rows: repeat(2,auto);
+        grid-template-columns: repeat(1,auto);
+        grid-template-areas: "main-content-area " 
+                            "aside-content-area";
+        gap: 20px;
+    }
+    .second-row-content .main-content .main-content-text-section{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .last-section{
+        display: grid;
+        grid-template-rows: repeat(3,auto);
+        grid-template-columns: repeat(1,auto);
+        grid-template-areas: "retro-pc"
+                            "top-laptops"
+                            "growth-gaming";
+       gap: 30px;
+    }
+}
