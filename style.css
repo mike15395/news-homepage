@@ -65,7 +65,7 @@ header nav .mobile-menu-image{
 
 
 li:hover{
-    color: var(--soft-orange);
+    color: var(--soft-red);
     cursor: pointer;
 }
 
@@ -208,6 +208,11 @@ cursor: pointer;
     font-weight: 800;
     color: var(--very-dark-blue);
     font-size: 18px;
+    
+}
+.last-section .text-section-sub-heading:hover{
+    color: var(--soft-red);
+    cursor: pointer;
 }
 .last-section .last-section-image{
     width: 100px;
