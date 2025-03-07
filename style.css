@@ -59,11 +59,7 @@ header nav .mobile-menu-image{
     display: none;
 }
 
- .sidebar-mobile-menu{
-    display: none;
-    background-color: var(--off-white);
-    
-} 
+ 
 
 
 
@@ -230,23 +226,29 @@ cursor: pointer;
         display: none;
     }
 
-    /* .sidebar-mobile-menu{
+    main{
+        gap:50px;
+    }
+    .sidebar-mobile-menu{
         display: flex;
         flex-direction: column;
-        gap: 40px;
-        height: 100vh;
-        width: 430px;
-        padding: 10%;
-        left: 100vw;
+        gap: 50px;
+        height: 100%;
+        width: 250px;
+        padding: 7%;
+        left: 40vw;
         position: absolute;
-       
+        background-color: var(--off-white);
+        z-index: 1;
+       transition: width 2s;
 
     }
 
     .sidebar-mobile-menu .close-icon-container{
         display: flex;
-        justify-content: center;
-        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        width: 90%;
     }
     .sidebar-mobile-menu .mobile-menu-close{
         display: flex;
@@ -258,7 +260,7 @@ cursor: pointer;
         flex-direction: column;
         gap: 20px;
         
-    } */
+    } 
 
     .second-row-content{
         display: grid;
@@ -274,6 +276,21 @@ cursor: pointer;
         gap: 20px;
     }
 
+    .second-row-content .main-content .main-content-text-section .read-more-section{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .aside-new-section{
+        display: flex;
+        flex-direction: column;
+        padding: 7%;
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+    }
+    
     .last-section{
         display: grid;
         grid-template-rows: repeat(3,auto);
